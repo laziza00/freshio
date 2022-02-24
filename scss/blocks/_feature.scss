@@ -233,7 +233,19 @@
 
 @media screen and (max-width: 768px) {
 
-   
+    .feature {
+        padding: 60px 0 80px 0;
+     
+        .feature__carousel-item {
+            width: 50%;
+            
+        }
+        .feature__carousel-item:nth-child(3) {
+            display: none;
+        }
+       
+    
+    }
 }
     
 
