@@ -1,0 +1,249 @@
+//************** feature************************
+.feature {
+    padding: 60px 0 80px 0;
+}
+.feature__span-box {
+    @include between();
+    .feature__title {
+        font-size: 30px;
+        color: $primary-green;
+        font-weight: 400;
+        letter-spacing: -.75px;
+        margin-bottom: 30px;
+    }
+    .feature__span {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid $primary-yellow;
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
+    .feature__link {
+        font-size: 12px;
+        line-height: 24px;
+        color: $primary-yellow;
+        font-weight: 700;
+        padding-bottom: 5px;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        border-bottom: 1px solid $primary-yellow;
+        @include d-flex();
+        .bx {
+            font-size: 16px;
+            color: $primary-yellow;
+        }
+    }
+}
+    .feature__carousel-list {
+        @include style-none(); 
+        @include d-flex();  
+        transition: all 0.3s ease;
+ 
+    .feature__carousel-item {
+        margin: 0 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        &:hover .feature__carousel-sum:after {
+            width: 100px;
+            transition: all 0.3s ease;
+        }
+        &:hover .feature__carousel-btns {
+           transform: translateY(-60px);
+            transition: all 0.3s ease;
+        }
+        
+    }
+    .feature__carousel-item-inner {
+          border: 1px solid  rgb(212, 211, 211);
+    }
+    .feature__carousel-imgbox {
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    .feature__carousel-innerbox {
+        padding-top: 20px;
+    }
+    .feature__carousel-img {
+        width: 298px;
+        height: 258px;
+        transition: all 0.3s ease;
+    }
+    .feature__carousel-btns {
+        position: absolute;
+        bottom: -60px;
+        left: 28%;
+        transition: all 0.3s ease;
+        @include center();
+    }
+    .feature__carousel-btn {
+        border: 1px solid  rgb(212, 211, 211);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: transparent;
+        padding: 10px 8px;
+        transition: all 0.3s ease;
+        margin: 0 2px;
+        &:hover {
+            background-color: $primary-green;
+            transition: all 0.3s ease;
+            border: 1px solid $primary-green;
+        }
+        &:hover .bx{
+            color: $white-color;
+            transition: all 0.3s ease;
+        }
+        .bx {
+            color: $primary-green;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+    }
+    .feature__carousel-title {
+        font-size: 14px;
+        color: $primary-yellow;
+        font-weight: 500;
+        display: block;
+        margin: 0 auto 10px auto;
+        text-decoration: none;
+        text-align: center;
+        text-transform: capitalize;
+
+    }
+    .feature__carousel-text {
+        padding: 0 15px;
+        text-overflow: ellipsis;
+        color: $dark-color;
+        font-size: 15px;
+        font-weight: 500;
+        display: block;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: capitalize;
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+    }
+    .feature__carousel-sum {
+        color: #e0bf96;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px auto 20px auto;
+        position: relative;
+        transition: all 0.3s ease;
+        &:after {
+            @include before();
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background-color: $primary-yellow;
+            width: 55px;
+            transform-origin: 50% 50%;
+            height: 2px;
+            display: block;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+    }
+        .feature__carousel-add {
+        font-size: 12px;
+        font-weight:$e-bold;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        color: $dark-color;
+        @include center();
+        margin: 30px auto 40px auto;
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        &:hover .bx{
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        .bx {
+            font-size: 16px;
+            color: $dark-color;
+        }
+        }
+
+}
+
+
+
+
+//************** modal1****************
+.modal-title {
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// **************responsive****************
+
+
+@media screen and (max-width: 992px) {
+
+//************** feature************************
+.feature {
+    padding: 60px 0 80px 0;
+ 
+    .feature__carousel-item {
+        width: 30%;
+        margin: 0 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+    }
+    .feature__carousel-item:nth-child(4) {
+        display: none;
+    }
+   
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+   
+}
+    
+
+@media screen and (max-width: 540px) {
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+
+}

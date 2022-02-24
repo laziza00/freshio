@@ -1,5 +1,28 @@
-@mixin list-unstyled {
+@mixin style-none {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+@mixin  d-flex {
+  display: flex;
+  align-items: center;
+}
+@mixin  between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin  center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin  around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin before {
+  content: '';
+  display: block;
 }
