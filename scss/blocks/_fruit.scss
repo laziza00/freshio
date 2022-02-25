@@ -5,44 +5,410 @@
     @include between();
     padding: 0 !important;
     margin: 0 !important;
+    height: 460px;
+}
+.fruit__imgbox {
+    position: relative;
+    overflow: hidden;
 }
 .fruit__veg-left {
-    padding: 0 !important;
+    padding: 0 15px 0 0!important;
     margin: 0 !important;
     .fruit__imgbox {
         width: 100%;
+        height: 100%;
         .fruit__img {
             width: 100%;
-            height: 100%;
+            height: 460px;
         }
+        &::before {
+            @include before();
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: rgba(0,0,0,.1);
+            transition: all 0.5s ease;
+        }
+        &::after {
+            @include before();
+            position: absolute;
+            bottom: -100%;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(0,0,0,.1);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+    }
+    &:hover {
+        .fruit__imgbox::before {
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+    }
+    &:hover {
+        .fruit__imgbox::after {
+            bottom: 0;
+            right: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+    }
+    &:hover .fruit__title:before {
+        width: 90px;
+        transition: all 0.5s ease;
     }
 }
 .fruit__veg-middletop {
-    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 15px  0 !important;
     margin: 0 !important;
     width: 100%!important;
     .fruit__img {
         width: 100%!important;
+        height: 215px;
     }
+    &::before {
+        @include before();
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.5s ease;
+    }
+    &::after {
+        @include before();
+        position: absolute;
+        bottom: -100%;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,.1);
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+    &:hover::before {
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+    
+    &:hover::after {
+            bottom: 0;
+            right: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+        &:hover .fruit__title:before {
+            width: 90px;
+            transition: all 0.5s ease;
+        }
+    
 }
 .fruit__veg-middle {
     padding: 0 !important;
     margin: 0 !important;
+    overflow: hidden;
     @include d-flex();
     width: 100%;
-    div {
+    .fruit__imgbox {
         width: 50%;
-        height: 100% !important;
+        height: 215px !important;
+        
     }
 }
 .fruit__veg-right {
-    padding: 0 !important;
+    padding: 0 0 0 15px!important;
     margin: 0 !important;
+    transition: all 0.5s ease;
     .fruit__imgbox {
         width: 100%;
-        .fruit__img {
+        &::before {
+            @include before();
+            position: absolute;
+            top: -100%;
+            left: -100%;
             width: 100%;
             height: 100%;
+            opacity: 0;
+            background-color: rgba(0,0,0,.1);
+            transition: all 0.5s ease;
         }
+        &::after {
+            @include before();
+            position: absolute;
+            bottom: -100%;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(0,0,0,.1);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+        .fruit__img {
+            width: 100%;
+            height: 460px;
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover {
+        .fruit__imgbox::before {
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+    }
+    &:hover {
+        .fruit__imgbox::after {
+            bottom: 0;
+            right: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+    }
+    &:hover .fruit__title:before {
+        width: 90px;
+        transition: all 0.5s ease;
+    }
+}
+.fruit-one {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        @include before();
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.5s ease;
+    }
+    &::after {
+        @include before();
+        position: absolute;
+        bottom: -100%;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,.1);
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+    &:hover::before {
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+    }
+    &:hover::after {
+            bottom: 0;
+            right: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+        &:hover .fruit__title:before {
+            width: 90px;
+            transition: all 0.5s ease;
+        }
+}
+
+.fruit-two {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        @include before();
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(0,0,0,.1);
+        transition: all 0.5s ease;
+    }
+    &::after {
+        @include before();
+        position: absolute;
+        bottom: -100%;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,.1);
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+    &:hover::before {
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+    }
+    &:hover::after {
+            bottom: 0;
+            right: 0;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+    &:hover .fruit__title:before {
+        width: 90px;
+        transition: all 0.5s ease;
+    }
+}
+.fruit__hover {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    transition: all 0.5s ease;
+
+    .fruit__title {
+        position: relative;
+        font-size: 20px;
+        color: $white-color;
+        font-weight: 400;
+        padding-bottom: 20px;
+        text-align: center;
+        line-height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.5s ease;
+        &:before {
+            @include before();
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transform-origin: 50% 50%;
+            transition: all 0.5s ease;
+            width: 50px;
+            height: 1px;
+            background-color: $white-color;
+        }
+    }
+}
+
+
+
+
+
+
+// ************responsive*****************
+
+@media screen and (max-width:992px){
+
+  
+    .fruit__veg-left {
+    
+            .fruit__img {
+                width: 100%;
+                height: 311px!important;
+            }
+        }
+    .fruit__veg-middletop {
+        .fruit__img {
+            height: 148px!important;
+        }
+    }
+    .fruit__veg-middle {
+        .fruit__imgbox {
+            width: 50%;
+            height: 148px !important;
+        }
+    }
+    .fruit__veg-right {
+        .fruit__imgbox {
+            width: 100%;
+            .fruit__img {
+                height: 311px !important;
+            }
+        }
+
+    } 
+    .fruit__one {
+        padding: 0 7px 0 0 !important;
+    }
+    .fruit__two {
+        padding: 0 0 0 7px !important;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+
+    .fruit__inner {
+        width: 100% !important;
+        flex-direction: column;
+    }
+    .fruit__veg-middle {
+        width: 100% !important;
+        flex-direction: column;
+    }
+  
+    .fruit__veg-left {
+        height: 215px !important;
+            width: 100% !important;
+            .fruit__img {
+                width: 100% !important;
+                height: 215px!important;
+                margin: 0 0 15px 0;
+            }
+        }
+    .fruit__veg-middletop {
+        height: 215px !important;
+        width: 100% !important;
+        .fruit__img {
+            width: 100% !important;
+            height: 215px!important;
+            margin: 0 0 15px 0;
+        }
+    }
+    .fruit__veg-middle {
+        width: 100% !important;
+        .fruit__imgbox {
+            width: 100% !important;
+            height: 215px !important;
+        }
+    }
+    .fruit__veg-right {
+        width: 100% !important;
+        height: 215px !important;
+        .fruit__imgbox {
+            width: 100%;
+            .fruit__img {
+                width: 100% !important;
+                height: 215px !important;
+                margin: 0 0 15px 0;
+            }
+        }
+
+    } 
+    .fruit__one {
+        height: 215px !important;
+        width: 100% !important;
+        margin: 0 0 15px 0;
+        padding: 0 !important;
+    }
+    .fruit__two {
+        width: 100% !important;
+        height: 215px !important;
+        margin: 0 0 15px 0;
+        padding: 0!important;
     }
 }

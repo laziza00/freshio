@@ -14,7 +14,7 @@
         padding: 0 40px;
         @include center();
         margin: 0 auto;
-        .support__inner-box { 
+        .subs__inner-box { 
             .bx {
                 font-size: 80px;
                 color: $primary-yellow;
@@ -97,7 +97,7 @@
         }   
         .subs__support-box {
             margin: 0 auto 15px 0;
-            .support__inner-box { 
+            .subs__inner-box { 
                 margin: 0 auto 15px 0;
             }
         }
