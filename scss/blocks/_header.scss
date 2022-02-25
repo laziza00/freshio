@@ -541,6 +541,7 @@
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 6000;
     .offcanvas-header {
         padding: 30px 20px 10px 20px;
     }

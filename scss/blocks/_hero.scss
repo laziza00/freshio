@@ -5,8 +5,74 @@
     @include d-flex();
 }
 .hero__home1 {
+    overflow: hidden;
+    position: relative;
     height: 650px;
     padding: 0 15px 0 0;
+    .hero__home-bg {
+        position: absolute;
+        top: 27%;
+        left: 10%;
+        z-index: 2000;
+        .hero__home-title {
+            font-size: 24px;
+            line-height: 24px;
+            color: $primary-yellow;
+            font-family: "Greatest Richmond";
+            margin: 0 0 30px 0;
+        }
+        .hero__home-text {
+        font-size: 40px;
+        line-height: 45px;
+        color:  $primary-green;
+        font-weight: 400;
+        text-transform: capitalize;
+        width: 60%;
+        margin: 0 0 30px 0;
+        }
+        .hero__step-link {
+            font-size: 12px;
+            color: $dark-color;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid $dark-color;
+            vertical-align: middle;
+            .bx {
+                transition: all 0.3s ease;
+            }
+            &:hover {
+                color: $primary-yellow;
+                transition: all 0.3s ease;
+                border-bottom: 1px solid $primary-yellow;
+            }
+            &:hover .bx{
+                color: $primary-yellow;
+                transition: all 0.3s ease;
+                transform: translateX(5px);
+            }
+        }
+    }
+    .carousel .hero__cr-btn {
+        width: 40px !important;
+        height: 40px!important;
+        border-radius: 50% !important;
+        background-color: $white-color !important;
+        border: none;
+        padding: 10px;
+        .hero__cr-btn:nth-child(1){
+            position: absolute !important;
+            bottom: 30px !important;
+            right: 30px !important;
+        }
+        .bx {
+            font-size: 18px;
+            color: $dark-color
+        }
+    } 
 }
 .hero__home2 {
     padding: 0 0 0 15px !important;
@@ -117,6 +183,11 @@
         }
     }
 }
+
+
+
+
+
 // *****************hero__cure**********************
     .hero__list {
         @include style-none();
@@ -386,6 +457,16 @@
         width: 50% !important;
         margin: 0 0 30px 0 !important;
     }
+    .hero__home1 {
+        .hero__home-bg {
+            top: 18%;
+            .hero__home-text {
+            width:70%;
+            font-size: 30px;
+            }
+            
+        }
+    }
 
 }
 @media screen and (max-width: 400px) {
@@ -397,6 +478,22 @@
     .hero__step-title {
         width: 80% !important;
         margin: 0 0 30px 0 !important;
+    }
+    .hero__home1 {
+        .hero__home-bg {
+            top: 11%;
+            .hero__home-title {
+                font-size: 18px;
+                margin: 0 0 15px 0;
+            }
+            .hero__home-text {
+            width: 75%;
+            font-size: 22px;
+            line-height: 35px;
+            margin: 0 0 20px 0;
+            }
+            
+        }
     }
 
 }
