@@ -4,6 +4,10 @@
 }
 .feature__span-box {
     @include between();
+    .feature__span-inner {
+        @include center();
+        align-items: center;
+    }
     .feature__title {
         font-size: 30px;
         color: $primary-green;
@@ -29,21 +33,29 @@
         display: inline-block;
         text-decoration: none;
         text-transform: capitalize;
+        transition: all 0.3s ease;
         border-bottom: 1px solid $primary-yellow;
         @include d-flex();
+        &:hover .bx {
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
         .bx {
             font-size: 16px;
             color: $primary-yellow;
+            transition: all 0.3s ease;
         }
     }
 }
     .feature__carousel-list {
+        width: 100%;
         @include style-none(); 
         @include d-flex();  
         transition: all 0.3s ease;
  
     .feature__carousel-item {
-        margin: 0 15px;
+        width: 23%;
+        margin: 0 13px;
         border-radius: 10px;
         transition: all 0.3s ease;
         &:hover .feature__carousel-sum:after {
@@ -68,7 +80,7 @@
         padding-top: 20px;
     }
     .feature__carousel-img {
-        width: 298px;
+        width: 100%;
         height: 258px;
         transition: all 0.3s ease;
     }
@@ -170,6 +182,7 @@
         &:hover .bx{
             color: $primary-yellow;
             transition: all 0.3s ease;
+            transform: translateX(10px);
         }
         .bx {
             font-size: 16px;
@@ -182,7 +195,7 @@
 
 
 
-//************** modal1****************
+//************** modal2 heart****************
 .modal-title {
     font-size: 14px;
     color: #888;
@@ -190,6 +203,191 @@
 
 
 
+// **********first modal eye*************
+.feature-modal {
+    .modal-content{
+        width: 1023px !important;
+        height: 700px !important;
+        position: relative;
+    }
+    .modal-dialog {
+        position: relative;
+        max-width:1000px !important;
+    }
+}
+
+
+.feature__modal-item2 {
+    padding: 50px 15px;
+}
+.modal__close{
+    color: #666;
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: all 0.6s ease;
+
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+.modal__item {
+    padding: 50px 15px;
+}
+.carousel-item {
+    border: 1px solid rgb(212, 211, 211);
+}
+.feature__veg-box {
+    @include d-flex();
+    margin-bottom: 8px;
+    align-items: center;
+}
+.feature__modal-title {
+    color: $dark-color;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    line-height: 1.1;
+    width: 80%;
+}
+.feature__veg-img {
+    width: 80px;
+    height: 70px;
+    border: 1px solid $primary-yellow;
+    border-radius: 5px;
+    margin: 0 30px 0 0 !important;
+}
+.feature__modal-sum {
+    color: #e0bf96;
+    font-size: 24px;
+    font-weight: 700;
+}
+.feature__modal-mug {
+    color: #aaa;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 90px;
+    margin: 0 0 16px 0;
+}
+.feature__num-box {
+    padding: 0 0 0 90px;
+    @include d-flex();
+}
+.feature__modal-btn {
+    line-height: 49px;
+    padding: 0 55px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    background-color: $primary-yellow;
+    @include d-flex();
+    .bx {
+        font-size: 16px;
+        color: $white-color;
+    }
+    &:hover {
+        transition: all 0.4s ease;
+        background-color: $primary-green;
+    }
+}
+
+.numbers__form {
+    @include d-flex ();
+}
+.number__input {
+    width: 120px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid rgb(212, 211, 211);
+    color: $gray-color;
+    outline: none;
+    margin: 0 7px 0 0;
+}
+
+.numbers__link-inner {
+    @include d-flex();
+    padding:20px 0 20px 90px;
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+.numbers__link {
+    font-size: 15px;
+    font-weight: $bold;
+    color: $dark-color;
+    text-decoration: none;
+    @include d-flex();
+    margin: 0 10px 0 0;
+    &:hover {
+        color: $primary-yellow;
+        transition: all 0.3s ease;
+    }
+    &:hover .bx{
+        color: $primary-yellow;
+        transition: all 0.3s ease;
+    }
+    .bx {
+        font-size: 20px;
+        color: $dark-color;
+        margin-right: 5px;
+    }
+}
+.feature__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 25px;
+    border-top: 1px solid rgb(212, 211, 211);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end
+}
+.feature__footer-inner {
+    @include d-flex();
+    align-items: center;
+}
+.feature__social-list {
+    @include style-none();
+    @include d-flex();
+    align-items: center;
+    .feature__social-item {
+        margin: 0 5px;
+    }
+    .feature__social-item:nth-child(1) {
+        .feature__social-link {
+            .bx {
+                color:#4c68a2;;
+            }
+        }
+    }
+    .feature__social-item:nth-child(2) {
+        .feature__social-link {
+            .bx {
+                color:#4285f4;
+            }
+        }
+    }
+    .feature__social-item:nth-child(3) {
+        .feature__social-link {
+            .bx {
+                color: red; 
+            }
+        }
+    }
+
+}
+.feature__share {
+    color: $dark-color;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0;
+}
 
 
 
@@ -227,6 +425,7 @@
    
 
 }
+}
 
 
 
@@ -234,11 +433,10 @@
 @media screen and (max-width: 768px) {
 
     .feature {
-        padding: 60px 0 80px 0;
+        padding: 60px 0 40px 0;
      
         .feature__carousel-item {
-            width: 50%;
-            
+            width: 45%; 
         }
         .feature__carousel-item:nth-child(3) {
             display: none;
@@ -247,15 +445,40 @@
     
     }
 }
-    
 
 @media screen and (max-width: 540px) {
 
+    .feature {
+        padding: 60px 0 10px 0;
+        .feature__span-box {
+            flex-direction: column;
+            margin-bottom: 30px;
+            .feature__span-inner {
+                @include center();
+                align-items: center;
+            }
+        }
+        .feature__carousel-list {
+            flex-direction: column;
+        }
+        .feature__carousel-item {
+            width: 100%; 
+            margin-bottom: 40px;
+        }
+        .feature__carousel-item:nth-child(3) {
+            display: block;
+        }
+        .feature__carousel-item:nth-child(4) {
+            display: block;
+        }
 
-}
-
-
-@media screen and (max-width: 400px) {
-
-
+        .feature__carousel-img {
+            width: 298px;
+            height: 258px;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+    
+    }
 }

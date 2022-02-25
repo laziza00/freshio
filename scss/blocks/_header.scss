@@ -40,18 +40,23 @@
         color: $primary-yellow;
     }
 .header {
-    // ***********bottom********8
+    margin: 0 0 30px 0;
+    // ***********bottom********
     .header__inner {
         padding: 25px 0;
         @include between();
     }
     .header__btn-hidden {
+        width: 40px;
+        height: 40px;
         background-color: transparent;
         border: none;
-        color: $gray-color;
         padding: 10px;
         display: none;
-        font-size: 23px;
+        .bx {
+            color: $dark-color;
+            font-size: 23px;
+        }
     }
     .header__logo-img {
         width: 130px;
@@ -119,10 +124,6 @@
         color: #fff;
         transition: all 0.3s ease;
     }
-    .header__user-btn:hover {
-        background-color: $primary-yellow;
-        transition: all 0.3s ease;
-    }
     .header__user-btn:nth-child(1) {
         background-color: #e8f8f7;
     }
@@ -132,6 +133,10 @@
     .header__user-btn:nth-child(3) {
         background-color: #f3e4dc;
      }
+     .header__user-btn:hover {
+        background-color: $primary-yellow;
+        transition: all 0.3s ease;
+    }
 
     //  ***********header navbar************8
 
@@ -213,17 +218,19 @@
 .home__drop {
     position: absolute;
     top: 87px;
-    left: 312px;
+    left: 315px;
     padding: 15px;
     width: 17%;
-    background-color: #fff;
+    background-color: $white-color;
     border-bottom-left-radius:  5px;
     border-bottom-right-radius:  5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
     display: none;
     animation: drop-anim both alternate;
     animation-duration: 0.5s;
     transition: all 0.5s ease;
     overflow: hidden;
+    z-index: 1500;
 }
 
 
@@ -259,15 +266,17 @@
     width: 74%;
     position: absolute;
     top: 87px;
-    left: 300px;
-    background-color: #fff;
+    left: 321px;
+    background-color: $white-color;
     border-bottom-left-radius:  5px;
     border-bottom-right-radius:  5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
     display: none;
     animation: shop-anim both alternate;
     animation-duration: 0.5s;
     transition: all 0.5s ease;
     overflow: hidden;
+    z-index: 1500;
 }
 .shop__drop-title {
     font-size: 16px;
@@ -310,15 +319,17 @@
     width: 85%;
     position: absolute;
     top: 87px;
-    left: 260px;
-    background-color: #fff;
+    left: 185px;
+    background-color: $white-color;
     border-bottom-left-radius:  5px;
     border-bottom-right-radius:  5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
     display: none;
     animation: page-anim both alternate;
     animation-duration: 0.5s;
     transition: all 0.5s ease;
     overflow: hidden;
+    z-index: 1500;
 }
 .page__drop-inner {
     padding: 15px 20px 25px 20px;
@@ -361,7 +372,6 @@
 }
 .barnav__shop-inner {
    padding: 0px 66px 0px 25px;
-   text-transform: none;
    font-size: 17px;
    color: $white-color;
    display: flex;
@@ -369,7 +379,7 @@
    background-color: transparent;
    cursor: pointer;
 }
-.modal-shop__list{
+.depart__list{
     padding: 10px 20px 20px 20px;
     // position: relative;
     background-color: $white-color;
@@ -378,15 +388,15 @@
     border-bottom-left-radius:  5px;
     border-bottom-right-radius:  5px;
     display: none;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
     padding: 0;
     @include style-none();
 }
-.modal-shop__item {
+.depart__item {
     padding: 13px 0;
     border-bottom: 1px solid #e4e4e4;
 }
-.modal__shop-link {
+.depart__shop-link {
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -403,7 +413,7 @@
         transition: all 0.3s ease;
     }
 }
-.modal-shop__item .bx {
+.depart__item .bx {
     color: $light-color;
     font-size: 20px;
     font-weight: 700;
@@ -475,15 +485,15 @@
     font-size: 15px;
     text-decoration: none;
   }
-.modal-shop__item:nth-child(2):hover .drop{
+.depart__item:nth-child(2):hover .drop{
     display: block;
     opacity: 1;
 }
-.modal-shop__item:nth-child(3):hover .drop2{
+.depart__item:nth-child(3):hover .drop2{
     display: block;
     opacity: 1;
 }
-.modal-shop__item:nth-child(5):hover .drop3{
+.depart__item:nth-child(5):hover .drop3{
     display: block;
     opacity: 1;
 }
@@ -497,9 +507,7 @@
 
 
 
-// *****************offcanvas user***************
-
-
+// *****************offcanvas right***************
 /* width */
 ::-webkit-scrollbar {
     width: 3px;
@@ -789,35 +797,398 @@
 
 
 
+// ************offcanvas left******************
+
+.offcanvas-left {
+    width: 290px;
+    background-color: $primary-green;
+
+    .offcanvas-header .btn-close {
+        color: $primary-yellow;
+        font-size: 15px;
+    }
+    .home-canvas__list {
+        @include style-none();
+    }
+    .home-canvas__item {
+        border-bottom: 1px solid #1e3028;
+    }
+    .home-canvas__item:nth-child(1) {
+        border-top: 1px solid #1e3028;
+    }
+    .home-canvas__link {
+        padding: 15px 0;
+        color: $white-color;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: capitalize;
+        @include between();
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        .home-canvas__btn {
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            padding: 0 10px;
+            color: $white-color;
+            border-left: 1px solid #1e3028;
+            transition: all 0.3s ease;
+            &:hover {
+                transition: all 0.3s ease;
+                transform: translateX(10px);
+                color: $primary-yellow;
+            }
+        }
+    }
+
+
+}
+
+
+
+// ***************modal 0ff 1********
+.off1 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: none;
+    width: 290px;
+    padding: 15px;
+    background-color: $primary-green;
+    z-index: 1500;
+    transition: all 0.3s ease;
+    animation: off1-anim alternate both ease 0.3s;
+
+    .off1__btn {
+        color: $white-color;
+        font-size: 15px;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: none;
+        @include d-flex();
+        transition: all 0.3s ease;
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        &:hover .bx{
+            color: $primary-yellow;
+            transform: translateX(-5px);
+        }
+        .bx {
+            color: $white-color;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+    }
+    .home-canvas__list {
+        @include style-none();
+    }
+    .home-canvas__item {
+        border-bottom: 1px solid #1e3028;
+    }
+    .home-canvas__item:nth-child(1) {
+        border-top: 1px solid #1e3028;
+    }
+    .home-canvas__link {
+        padding: 15px 0;
+        color: $white-color;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+        @include between();
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+}
+}
 
 
 
 
 
+@keyframes off1-anim {
+    100% {
+        left: 0;
+    }
+
+}
 
 
 
 
 
+// ***************modal 0ff 2********
+.off2 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: none;
+    width: 290px;
+    padding: 15px;
+    background-color: $primary-green;
+    z-index: 1500;
+    transition: all 0.3s ease;
+    animation: off1-anim alternate both ease 0.3s;
+
+    .off2__btn {
+        color: $white-color;
+        font-size: 15px;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: none;
+        @include d-flex();
+        transition: all 0.3s ease;
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        &:hover .bx{
+            color: $primary-yellow;
+            transform: translateX(-5px);
+            transition: all 0.3s ease;
+        }
+        .bx {
+            color: $white-color;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+    }
+    .home-canvas__list {
+        @include style-none();
+    }
+    .home-canvas__item {
+        transition: all 0.3s ease;
+        border-bottom: 1px solid #1e3028;
+    }
+    .home-canvas__item:nth-child(1) {
+        border-top: 1px solid #1e3028;
+    }
+    .home-canvas__link {
+        padding: 15px 0;
+        color: $white-color;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+        @include between();
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+}
 
 
 
+// *************collapse*****************
+.collapse__modal1 {
+    height: 277px;
+    background-color: $primary-green;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+}
+.collapse__body-box {
+    border: none;
+    background-color: $primary-green;
+    transition: all 0.3s ease;
+}
+    .home-canvas__item:nth-child(1) {
+        border-top: 1px solid transparent;
+    }
+    .collapse__item-btn {
+        color: $white-color;
+        font-size: 15px;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: none;
+        @include d-flex();
+        transition: all 0.3s ease;
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        &:hover .bx{
+            color: $primary-yellow;
+            transform: translateX(-5px);
+        }
+        .bx {
+            color: $white-color;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+    }
+
+// *************collapse2*****************
+
+    .collapse__modal2 {
+        height: 277px;
+        background-color: $primary-green;
+        transition: all 0.3s ease;
+        overflow-x: hidden;
+    }
+    .collapse__body-box {
+        border: none;
+        background-color: $primary-green;
+        transition: all 0.3s ease;
+    }
+        .home-canvas__item:nth-child(1) {
+            border-top: 1px solid transparent;
+        }
+        .collapse__item-btn {
+            color: $white-color;
+            font-size: 15px;
+            text-transform: capitalize;
+            background-color: transparent;
+            border: none;
+            @include d-flex();
+            transition: all 0.3s ease;
+            &:hover {
+                color: $primary-yellow;
+                transition: all 0.3s ease;
+            }
+            &:hover .bx{
+                color: $primary-yellow;
+                transform: translateX(-5px);
+            }
+            .bx {
+                color: $white-color;
+                font-size: 15px;
+                transition: all 0.3s ease;
+            }
+        }
 
 
 
+    // *************collapse3*****************
 
+    .collapse__modal3 {
+        height: 277px;
+        background-color: $primary-green;
+        transition: all 0.3s ease;
+        overflow-x: hidden;
+    }
+    .collapse__body-box3 {
+        border: none;
+        background-color: $primary-green;
+        transition: all 0.3s ease;
+    }
+    
+        .collapse__item-btn {
+            color: $white-color;
+            font-size: 15px;
+            text-transform: capitalize;
+            background-color: transparent;
+            border: none;
+            @include d-flex();
+            transition: all 0.3s ease;
+            &:hover {
+                color: $primary-yellow;
+                transition: all 0.3s ease;
+            }
+            &:hover .bx{
+                color: $primary-yellow;
+                transform: translateX(-5px);
+            }
+            .bx {
+                color: $white-color;
+                font-size: 15px;
+                transition: all 0.3s ease;
+            }
+        }
 
+//*************collapse4*****************
 
+    .collapse__modal4 {
+        height: 277px;
+        background-color: $primary-green;
+        transition: all 0.3s ease;
+        overflow-x: hidden;
+    }
+    .collapse__body-box4 {
+        border: none;
+        background-color: $primary-green;
+        transition: all 0.3s ease;
+    }
+    
+        .collapse__item-btn {
+            color: $white-color;
+            font-size: 15px;
+            text-transform: capitalize;
+            background-color: transparent;
+            border: none;
+            @include d-flex();
+            transition: all 0.3s ease;
+            &:hover {
+                color: $primary-yellow;
+                transition: all 0.3s ease;
+            }
+            &:hover .bx{
+                color: $primary-yellow;
+                transform: translateX(-5px);
+            }
+            .bx {
+                color: $white-color;
+                font-size: 15px;
+                transition: all 0.3s ease;
+            }
+        }
+    }
 
+// ***************modal 0ff 3********
+.off3 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: none;
+    width: 290px;
+    height: 100%;
+    padding: 15px;
+    background-color: $primary-green;
+    z-index: 1500;
+    transition: all 0.3s ease;
+    animation: off1-anim alternate both ease 0.3s;
+    overflow-x: hidden;
 
-
-
-
-
-
-
-
-
+    .off3__btn {
+        color: $white-color;
+        font-size: 15px;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: none;
+        @include d-flex();
+        transition: all 0.3s ease;
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        &:hover .bx{
+            color: $primary-yellow;
+            transform: translateX(-5px);
+        }
+        .bx {
+            color: $white-color;
+            font-size: 15px
+        }
+    }
+    .home-canvas__list {
+        @include style-none();
+    }
+    .home-canvas__item {
+        padding: 15px 0;
+        border-bottom: 1px solid #1e3028;
+    }
+    .home-canvas__item:nth-child(1) {
+        border-top: 1px solid #1e3028;
+    }
+    .home-canva__img {
+        width: 270px;
+        height: 348px;
+    }
+}
 
 // **************responsive****************
 
@@ -828,7 +1199,7 @@
     .header__top {
         display: none;
     }
-    .header__btn-hidden {
+    .header__inner .header__btn-hidden{
         display: block;
     }
     .header__input-box {
@@ -852,33 +1223,6 @@
 
 }
 
-
-
-@media screen and (max-width: 768px) {
-
-   
+.show {
+    display: block;
 }
-    
-
-@media screen and (max-width: 540px) {
-
-
-}
-
-
-@media screen and (max-width: 400px) {
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-

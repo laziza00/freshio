@@ -40,8 +40,8 @@
   <div class="header__bottom">
     <div class="container">
       <div class="header__inner">
-          <button  class="header__btn-hidden">
-            <i class='bx bx-menu'></i>
+          <button class="header__btn-hidden" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class='bx bx-menu-alt-right'></i>
           </button>
           <div class="header__logo-box">
             <a href="#">
@@ -80,14 +80,14 @@
               <button class=" barnav__btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class='bx bx-menu'></i> Shop by Department
               </button>
-              <ul class="dropdown-menu modal-shop__list" aria-labelledby="dropdownMenuButton1">
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+              <ul class="dropdown-menu depart__list" aria-labelledby="dropdownMenuButton1">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i> fruit & vegetables
                   </a>
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i> supplyments
                     <i class='bx bx-chevron-right'></i>
                     <div class="modal__drop drop">
@@ -116,8 +116,8 @@
                     </div>
                   </a>
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i> dairy braed & eggs 
                     <i class='bx bx-chevron-right'></i>
                     <div class="modal__drop drop2">
@@ -146,13 +146,13 @@
                     </div>
                   </a>
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i> fruit & package & foods
                   </a>
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i>  beauty & care
                     <i class='bx bx-chevron-right'></i>
                     <div class="modal__drop drop3">
@@ -181,23 +181,23 @@
                     </div>
                   </a>
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i> fhealth & velness
                   </a>
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i> baby & infants
                   </a> 
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i>  home care
                   </a>
                 </li>
-                <li class="modal-shop__item">
-                  <a class="modal__shop-link" href="#">
+                <li class="depart__item">
+                  <a class="depart__shop-link" href="#">
                     <i class='bx bxs-bowl-rice'></i> hot offers
                   </a>
                 </li>
@@ -440,6 +440,65 @@
 <div class="hero">
   <div class="container">
     <div class="hero__inner">
+      <div class="hero-home">
+        <div class="col-md-8 col-xs-12 hero__home1">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/hero-step1.jpg" class="d-block w-100" alt="img">
+              </div>
+              <div class="carousel-item">
+                <img src="images/hero-step2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/hero-step4.jpg" class="d-block w-100" alt="img">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- <div class="hero__home-bg">
+            <p>fresh and tasty</p>
+            <h2>form market organic shop</h2>
+            <a class="hero__step-link" href="#">
+              shop  now<i class='bx bx-chevrons-right'></i>
+            </a>
+          </div> -->
+        </div>
+        <div class="col-md-4 col-xs-12 hero__home2">
+          <div class="hero__step">
+            <div class="hero__step-top col-xs-12 col-sm-6">
+              <div class="hero__top-inner">
+              <h3 class="hero__step-title">Discover
+                Real Organic
+                Flavors</h3>
+                <a class="hero__step-link" href="#">
+                  shop now<i class='bx bx-chevrons-right'></i>
+                </a>
+              </div>
+            </div>
+            <div class="hero__step-bottom col-xs-12 col-sm-6">
+              <div>
+              <h3 class="hero__step-sale">Summer Sale</h3>
+              <p class="hero__step-off">50% Off</p>
+              <p class="hero__step-vit"> Vitamins, Supplements and Herbs</p>
+              <div class="hero__step-linkbox">
+                <a class="hero__step-now" href="#">
+                  shop now<i class='bx bx-chevrons-right'></i>
+                </a>
+              </div>
+        
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="hero__cure">
         <ul class="hero__list">
           <li class="hero__item col-xs-12 col-sm-6 col-md-3">
@@ -484,14 +543,12 @@
   </div>
 </div>
 </section>
-
-
 <!-- feature section -->
 <section class="feature">
   <div class="container">
     <div class="feature__inner">
       <div class="feature__span-box">
-        <div>
+        <div class="feature__span-inner">
       <span class="feature__span"></span>
       <h2 class="feature__title">
         Featured Products
@@ -539,7 +596,7 @@
               <button class="feature__carousel-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
                 <i class='bx bx-heart' ></i>
               </button>
-              <button class="feature__carousel-btn">
+              <button class="feature__carousel-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <i class='bx bx-low-vision'></i>
               </button>
               <button class="feature__carousel-btn">
@@ -569,7 +626,7 @@
               <button class="feature__carousel-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
                 <i class='bx bx-heart' ></i>
               </button>
-              <button class="feature__carousel-btn">
+              <button class="feature__carousel-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <i class='bx bx-low-vision'></i>
               </button>
               <button class="feature__carousel-btn">
@@ -599,7 +656,170 @@
               <button class="feature__carousel-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
                 <i class='bx bx-heart' ></i>
               </button>
+              <button class="feature__carousel-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class='bx bx-low-vision'></i>
+              </button>
               <button class="feature__carousel-btn">
+                <i class='bx bx-share-alt'></i>
+              </button>
+            </div>
+          </div>
+          <div class="feature__carousel-innerbox">
+            <a class="feature__carousel-title" href="#">
+              home
+            </a>
+            <a  class="feature__carousel-text" href="#">
+              organic high curumin turemic powder
+            </a>
+            <p class="feature__carousel-sum">$29.00</p>
+            <a class="feature__carousel-add" href="#">
+              add to cart <i class='bx bx-chevrons-right'></i>
+            </a>
+          </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- fruit section -->
+<!-- <section class="fruit">
+  <div class="container">
+    <div class="fruit__inner">
+      <div class="fruit__veg col-xs-12 col-md-3">
+          <div class="fruit__imgbox col-xs-12">
+            <img src="images/" alt="img">
+          </div>
+      </div>
+      <div class="fruit__veg col-xs-12 col-md-6">
+        <div class="fruit__imgbox col-xs-12">
+          <img src="images/" alt="img">
+        </div>
+      </div>
+      <div class="fruit__veg col-xs-12 col-md-3">
+        <div class="fruit__imgbox col-xs-12">
+          <img src="images/" alt="img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- feature section -->
+<section class="feature">
+  <div class="container">
+    <div class="feature__inner">
+      <div class="feature__span-box">
+        <div class="feature__span-inner">
+      <span class="feature__span"></span>
+      <h2 class="feature__title">
+        Best Seller
+      </h2>
+    </div>
+    <a class="feature__link" href="#">show all<i class='bx bx-chevrons-right'></i></a>
+  </div>
+    <div class="feature__carousel-box">
+      <ul class="feature__carousel-list">
+        <li class="feature__carousel-item col-xs-12 col-sm-6 col-md-3">
+          <div class="feature__carousel-item-inner">
+          <div class="feature__carousel-imgbox">
+            <img class="feature__carousel-img" src="images/veg1.jpg" alt="img">
+            <div class="feature__carousel-btns">
+              <button class="feature__carousel-btn"  data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <button class="feature__carousel-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class='bx bx-low-vision'></i>
+              </button>
+              <button class="feature__carousel-btn">
+                <i class='bx bx-share-alt'></i>
+              </button>
+            </div>
+          </div>
+          <div class="feature__carousel-innerbox">
+            <a class="feature__carousel-title" href="#">
+              home
+            </a>
+            <a  class="feature__carousel-text" href="#">
+              organic high curumin turemic powder
+            </a>
+            <p class="feature__carousel-sum">$29.00</p>
+            <a class="feature__carousel-add" href="#">
+              add to cart <i class='bx bx-chevrons-right'></i>
+            </a>
+          </div>
+          </div>
+        </li>
+        <li class="feature__carousel-item col-xs-12 col-sm-6 col-md-3">
+          <div class="feature__carousel-item-inner">
+          <div class="feature__carousel-imgbox">
+            <img class="feature__carousel-img" src="images/veg2.jpg" alt="img">
+            <div class="feature__carousel-btns">
+              <button class="feature__carousel-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <button class="feature__carousel-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class='bx bx-low-vision'></i>
+              </button>
+              <button class="feature__carousel-btn">
+                <i class='bx bx-share-alt'></i>
+              </button>
+            </div>
+          </div>
+          <div class="feature__carousel-innerbox">
+            <a class="feature__carousel-title" href="#">
+              home
+            </a>
+            <a  class="feature__carousel-text" href="#">
+              organic high curumin turemic powder
+            </a>
+            <p class="feature__carousel-sum">$29.00</p>
+            <a class="feature__carousel-add" href="#">
+              add to cart <i class='bx bx-chevrons-right'></i>
+            </a>
+          </div>
+          </div>
+        </li>
+        <li class="feature__carousel-item col-xs-12 col-sm-6 col-md-3">
+          <div class="feature__carousel-item-inner">
+          <div class="feature__carousel-imgbox">
+            <img class="feature__carousel-img" src="images/veg3.jpg" alt="img">
+            <div class="feature__carousel-btns">
+              <button class="feature__carousel-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <button class="feature__carousel-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class='bx bx-low-vision'></i>
+              </button>
+              <button class="feature__carousel-btn">
+                <i class='bx bx-share-alt'></i>
+              </button>
+            </div>
+          </div>
+          <div class="feature__carousel-innerbox">
+            <a class="feature__carousel-title" href="#">
+              home
+            </a>
+            <a  class="feature__carousel-text" href="#">
+              organic high curumin turemic powder
+            </a>
+            <p class="feature__carousel-sum">$29.00</p>
+            <a class="feature__carousel-add" href="#">
+              add to cart <i class='bx bx-chevrons-right'></i>
+            </a>
+          </div>
+          </div>
+        </li>
+        <li class="feature__carousel-item col-xs-12 col-sm-6 col-md-3">
+          <div class="feature__carousel-item-inner">
+          <div class="feature__carousel-imgbox">
+            <img class="feature__carousel-img" src="images/veg4.jpg" alt="img">
+            <div class="feature__carousel-btns">
+              <button class="feature__carousel-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <button class="feature__carousel-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <i class='bx bx-low-vision'></i>
               </button>
               <button class="feature__carousel-btn">
@@ -628,11 +848,90 @@
   </div>
 </section>
 
+<!-- people section -->
+<section class="people">
+  <div class="container">
+    <div class="people__inner">
+    <ul class="people__list">
+      <li class="people__item">
+          <div class="people__imgbox col-xs-12 col-sm-6">
+            <img class="people__img" src="images/feature-bt1.jpg" alt="img">
+          </div>
+          <div class="people__info col-xs-12 col-sm-6">
+            <h2 class="people__title">
+              A shop for good people by good people
+            </h2>
+            <p class="people__text">
+              Buy natural, sustainable and chemicalfree products from local sellers across the country.
+            </p>
+            <p class="people__text">
+              We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.
+            </p>
+            <a class="people__link" href="#">
+              store location<i class='bx bx-chevrons-right'></i>
+            </a>
+          </div>
+      </li>
+      <li class="people__item">
+          <div class="people__imgbox col-xs-12 col-sm-6">
+            <img class="people__img" src="images/feature-bt2.jpg" alt="img">
+          </div>
+          <div class="people__info col-xs-12 col-sm-6">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button " data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active cr-btn" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="people__box">
+                    <h2 class="people__title">
+                      why customer love us
+                         </h2>
+                   <p class="people__text">
+                     We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, on community and quality content.
+                   </p>
+                     <p class="people__gray-text">pagya-bellandur store</p>
+                  </div>
+            
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="people__box">
+                  <h2 class="people__title">
+                    why customer love us </h2>
+                 <p class="people__text">
+                   We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic,  on community and quality content.
+                 </p>
+                   <p class="people__gray-text">pagya-bellandur store</p>
+                 </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="people__box">
+                  <h2 class="people__title">
+                    why customer love us
+                    </h2>
+                 <p class="people__text">
+                   We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, community and quality content.
+                 </p>
+                   <p class="people__gray-text">pagya-bellandur store</p>
+                </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+</section>
 
 
 
 
-<!-- ofcanavs -->
+
+<!-- ofcanavs right-->
 
   <div class="offcanvas offcanvas-end user" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header user__header">
@@ -809,17 +1108,16 @@
 
  <!-- featuremodal2 -->
 
-
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+<div class="modal fade feature-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 aria-labelledby="staticBackdropLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
   <div class="modal-content">
     <div class="d-flex">
-      <div class="col-6 modal__item">
+      <div class="col-5 modal__item">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/veg1.jpg" alt="phone" class="modal__img d-block w-100">
+              <img class="" src="images/veg1.jpg" alt="phone" class="modal__img d-block w-100">
             </div>
             <div class="carousel-item">
               <img src="images/veg2.jpg" alt="phone" class="modal__img d-block w-100">
@@ -831,22 +1129,59 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <img src="images/veg4.jpg" alt="phone" class="modal__img d-block w-100">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <i class='bx bxs-left-arrow-alt'></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <i class='bx bxs-right-arrow-alt'></i>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
-      <div class="col-6 modal__item2">
+      <div class="col-7 modal__item2 feature__modal-item2">
         <div>
           <button type="button" class="btn-close modal__close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="feature__modal">
+            <div class="feature__veg-box">
+              <a href="#">
+                <img class="feature__veg-img" src="images/veg1.jpg" alt="img">
+              </a> 
+              <div>
+                <h2 class="feature__modal-title">PAMELA'S PRODUCTS ARTISAN BLEND FLOUR GLUTEN FREE</h2>
+                <p class="feature__modal-sum">$11.90</p>
+              </div>
+            </div>
+            <div class="feature__modal-muginner">
+            <p class="feature__modal-mug">White Ceramic Mug. 325ml</p>
+            <div class="feature__num-box numbers">
+                <form class="numbers__form" action="#">
+                  <input class="number__input" type="number" placeholder="1">
+                  <button class="feature__modal-btn">add to cart <i class='bx bx-chevrons-right'></i></button>
+                </form>
+            </div>
+            <div class="numbers__link-inner">
+              <a class="numbers__link" href="#">  <i class='bx bx-heart' ></i>Add to Wishlist</a>
+              <a class="numbers__link" href="#">  <i class='bx bx-share-alt' ></i>Add to Wishlist</a>
+            </div>
+          </div>
         </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature__footer">
+        <div class="feature__footer-inner">
+        <p class="feature__share">share:</p>
+        <ul class="feature__social-list">
+          <li class="feature__social-item">
+            <a class="feature__social-link" href="#">
+              <i class='bx bxl-facebook' ></i>
+            </a>
+          </li>
+          <li class="feature__social-item">
+            <a  class="feature__social-link" href="#">
+              <i class='bx bxl-twitter' ></i>
+            </a>
+          </li>
+          <li class="feature__social-item">
+            <a  class="feature__social-link" href="#">
+              <i class='bx bxl-pinterest'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </div>
   </div>
@@ -855,6 +1190,357 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
 
 
+
+<!-- offcanvas left2 -->
+
+<div class="offcanvas offcanvas-start offcanvas-left home-canvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+    <button type="button" class="btn-close text-reset left-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <ul class="home-canvas__list">
+        <li class="home-canvas__item">
+          <a class="home-canvas__link" href="#">
+            home <button class="home-canvas__btn" id="off1open">
+              <i class='bx bx-chevrons-right'></i>
+            </button>
+          </a>
+        </li>
+        <li class="home-canvas__item">
+          <a class="home-canvas__link" href="#">
+            shop <button class="home-canvas__btn" id="off2open">
+              <i class='bx bx-chevrons-right'></i>
+            </button>
+          </a>
+        </li>
+        <li class="home-canvas__item">
+          <a class="home-canvas__link" href="#">
+            pages <button class="home-canvas__btn" id="off3open">
+              <i class='bx bx-chevrons-right'></i>
+            </button>
+          </a>
+        </li>
+        <li class="home-canvas__item">
+          <a class="home-canvas__link" href="#">
+            blog
+          </a>
+        </li>
+        <li class="home-canvas__item">
+          <a  class="home-canvas__link" href="#">
+            contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- off1canvasmodal1 -->
+<div class="off1" id="off1modal">
+  <button class="off1__btn" id="off1remove">
+    <i class='bx bx-chevrons-left'></i> back to home
+  </button>
+    <ul class="home-canvas__list">
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          home 1
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          home 2
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          home 3
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          home 4
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          home 5
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          home 6
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          home 7
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          home 8
+        </a>
+      </li>
+    </ul>
+</div>
+
+<!-- off2canvasmodal2 -->
+<div class="off2" id="off2modal">
+  <button class="off2__btn" id="off2remove">
+    <i class='bx bx-chevrons-left'></i> back to home
+  </button>
+    <ul class="home-canvas__list">
+      <li class="home-canvas__item">
+        <a class="home-canvas__link collapse__item" href="#">
+          categories 1 <button class="collapse__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <i class='bx bx-chevrons-right'></i>
+          </button>
+        </a>
+        <div class="collapse collapse__modal1" id="collapseExample">
+          <div class="card card-body collapse__body-box">
+            <ul class="home-canvas__list">
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fish
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fruit
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  vegetables
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  banana
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a  class="home-canvas__link" href="#">
+                  apple
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#" >
+          categories 2 <button class="collapse__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+            <i class='bx bx-chevrons-right'></i>
+          </button>
+        </a>
+        <div class="collapse collapse__modal2" id="collapseExample2">
+          <div class="card card-body collapse__body-box">
+            <ul class="home-canvas__list">
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fish
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fruit
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  vegetables
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  banana
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a  class="home-canvas__link" href="#">
+                  apple
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link">
+          categories 3 <button class="collapse__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+            <i class='bx bx-chevrons-right'></i>
+          </button>
+        </a>
+        <div class="collapse collapse__modal3" id="collapseExample3">
+          <div class="card card-body collapse__body-box3">
+            <ul class="home-canvas__list">
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fish
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fruit
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  vegetables
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  banana
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a  class="home-canvas__link" href="#">
+                  apple
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" >
+          categories 4 <button class="collapse__item-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+            <i class='bx bx-chevrons-right'></i>
+          </button>
+        </a>
+
+        <div class="collapse collapse__modal4" id="collapseExample4">
+          <div class="card card-body collapse__body-box4">
+            <ul class="home-canvas__list">
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fish
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  fruit
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  vegetables
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a class="home-canvas__link" href="#">
+                  banana
+                </a>
+              </li>
+              <li class="home-canvas__item">
+                <a  class="home-canvas__link" href="#">
+                  apple
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          categories 5
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          categories 6
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          categories 7
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a  class="home-canvas__link" href="#">
+          categories 8
+        </a>
+      </li>
+    </ul>
+</div>
+
+
+<!-- off3canvasmodal3 -->
+<div class="off3" id="off3modal">
+  <button class="off3__btn" id="off3remove">
+    <i class='bx bx-chevrons-left'></i> back to home
+  </button>
+    <ul class="home-canvas__list">
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          <img class="home-canva__img" src="images/pages-img.jpg" alt="img">
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          <img class="home-canva__img" src="images/pages-img.jpg" alt="img">
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          <img class="home-canva__img" src="images/pages-img.jpg" alt="img">
+        </a>
+      </li>
+      <li class="home-canvas__item">
+        <a class="home-canvas__link" href="#">
+          <img class="home-canva__img" src="images/pages-img.jpg" alt="img">
+        </a>
+      </li>
+    </ul>
+</div>
+
+<!--  bottom modal -->
+<div class="bottom__nav">
+  <div class="bottom__inner">
+    <ul class="bottom__list">
+      <li class="bottom__item">
+        <a class="bottom__link" href="#">
+          <i class='bx bx-store' ></i>
+          shop
+        </a>
+      </li>
+      <li class="bottom__item">
+        <a class="bottom__link" href="#">
+          <i class='bx bx-heart' ></i>
+          wishlist
+        </a>
+      </li>
+      <li class="bottom__item">
+        <a class="bottom__link" href="#">
+          <i class='bx bx-user' ></i>
+          account
+        </a>
+      </li>
+      <li class="bottom__item">
+        <a class="bottom__link" href="#">
+          <i class='bx bx-search' ></i>
+          search
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- got top -->
+<div class="go-top">
+  <a class="go-top__btn " href="#">
+    <i class='bx bx-chevrons-up'></i>
+  </a>
+</div>
     <script src="js/main.js"></script>
   </body>
 </html>
+
+

@@ -1,5 +1,123 @@
 // ******************hero*************************
-.hero {
+
+
+.hero-home {
+    @include d-flex();
+}
+.hero__home1 {
+    height: 650px;
+    padding: 0 15px 0 0;
+}
+.hero__home2 {
+    padding: 0 0 0 15px !important;
+}
+.hero__step-top {
+    width: 100%;
+    height: 290px;
+    background-image: url('../../images/hero-step2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:  0 0 15px 0!important;
+}
+.hero__step-bottom {
+    width: 100%;
+    height: 290px;
+    background-image: url('../../images/hero-step3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15px 0 0 0 !important;
+}
+.hero__step-top {
+    .hero__top-inner{
+        padding: 50px;
+    }
+    .hero__step-title {
+    font-size: 24px;
+    line-height: 30px;
+    color: $primary-green;
+    margin-bottom: 80px;
+    width: 50%;
+    }
+    .hero__step-link {
+        font-size: 12px;
+        color: $dark-color;
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid $dark-color;
+        vertical-align: middle;
+        &:hover {
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid $primary-yellow;
+        }
+        &:hover .bx{
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+            transform: translateX(5px);
+        }
+    }
+}
+.hero__step-bottom {
+   @include center();
+    .hero__step-sale {
+        font-size: 24px;
+        font-family: "Conv_Greatest Richmond 400";
+        color: $white-color;
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
+    .hero__step-off {
+        font-size: 40px;
+        color: $primary-gold;
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+    .hero__step-vit {
+        font-size: .875rem;
+        color: $white-color;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+    }
+    .hero__step-linkbox {
+        @include center();
+    }
+    .hero__step-now {
+        font-size: 12px;
+        color: $white-color;
+        font-weight: 700;
+        padding: 11px 28px 10px 28px;
+        background-color: $primary-yellow;
+        border-radius: 30px;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        text-align: center;
+        transition: all 0.3s ease;
+        margin: 0 auto;
+        @include d-flex();
+        &:hover {
+            background-color: $white-color;
+            color: $primary-yellow;
+            transition: all 0.3s ease;
+        }
+        &:hover .bx{
+            color: $primary-yellow;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+        .bx {
+            font-size: 14px;
+            color: $white-color;
+            margin: 3px 0 0  5px;
+            transition: all 0.3s ease;
+        }
+    }
+}
+// *****************hero__cure**********************
     .hero__list {
         @include style-none();
         @include d-flex();
@@ -45,15 +163,71 @@
         height: 64px;
         margin-right: 15px;
     }
+
+
+
+
+
+
+// *****************go top***********
+.go-top {
+    position: fixed;
+    bottom: 15px;
+    right: 65px;
+    .go-top__btn {
+        width: 40px;
+        height: 40px;
+        background-color: $primary-yellow;
+        color: $white-color;
+        display: block;
+        border: none;
+        border-radius: 50%;
+        padding: 8px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        &:hover {
+            background-color: $primary-green;
+            transition: all 0.3s ease;
+        }
+        .bx {
+            color: $white-color;
+            font-size: 25px;
+            transition: all 0.3s ease;
+        }
+    }
 }
 
 
-
-
-
-
-
-
+// *****************bootom modal***********
+.bottom__nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white-color;
+    padding: 10px 50px;
+    display: none;
+    .bottom__list {
+        @include style-none();
+        @include between();
+        padding: 0;
+    }
+    .bottom__link {
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        color: $primary-green;
+        margin: 3px 0 0 0;
+        @include d-flex();
+        flex-direction: column;
+        text-transform: capitalize;
+        text-decoration: none;
+        .bx {
+            font-size: 25px;
+            color: $primary-green;
+        }
+    }
+}
 
 
 
@@ -65,7 +239,43 @@
 
 @media screen and (max-width: 992px) {
 
-    // ***********hero**************
+// **********hero home*************************
+
+.hero__home1 {
+    margin: 0 0 30px 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+}
+.hero-home {
+    flex-direction: column;
+}
+.hero__step {
+    @include between();
+}
+.hero__home2 {
+    width: 100%;
+    padding: 0 !important;
+}
+.hero__top-inner{
+    padding: 30px !important;
+}
+.hero__step-title {
+    margin: 0 0 50px 0 !important;
+}
+.hero__step-top {
+    width: 48%;
+    height: 220px;
+    padding:  0 !important;
+    margin: 0 !important;
+}
+.hero__step-bottom {
+    width: 48%;
+    height: 220px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+    // ***********hero cure**************
     .hero__list {
         @include between();
         padding: 0;
@@ -89,13 +299,49 @@
     .hero__item-text {
        width: 100%;
     }
+// *****************bootom modal***********
+    .bottom__nav {
+        display: block;
+    }
 }
 
 
 
 @media screen and (max-width: 768px) {
+// **********hero home*************************
+.hero__home1 {
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+}
+.hero__step {
+    flex-direction: column;
+}
+.hero__home2 {
+    width: 100%;
+    padding: 0 !important;
+}
+.hero__step-top {
+    margin: 0 0 15px 0 !important;
+    width: 100% !important;
+    height: 220px !important;
+    padding: 0;
+}
+.hero__top-inner{
+    padding: 30px !important;
+}
+.hero__step-title {
+    width: 40% !important;
+    margin: 0 0 50px 0 !important;
+}
+.hero__step-bottom {
+    width: 100% !important;
+    height: 220px !important;
+    padding: 0 ;
+    margin: 15px 0 0 0 !important;
+}
 
-    // ***********hero**************
+    // ***********hero cure**************
     .hero__list {
         padding: 0;
         flex-direction: column;
@@ -132,15 +378,24 @@
     .hero__item {
         width: 70%;
     }
+    .hero__top-inner{
+        padding: 30px !important;
+    }
+    .hero__step-title {
+        width: 50% !important;
+        margin: 0 0 30px 0 !important;
+    }
 
 }
-
-
 @media screen and (max-width: 400px) {
 
     // ***********hero**************
     .hero__item { 
         width: 100%;
+    }
+    .hero__step-title {
+        width: 80% !important;
+        margin: 0 0 30px 0 !important;
     }
 
 }
