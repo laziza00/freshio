@@ -1,0 +1,48 @@
+.fruit {
+    padding: 40px 0 0 60px;
+}
+.fruit__inner {
+    @include between();
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.fruit__veg-left {
+    padding: 0 !important;
+    margin: 0 !important;
+    .fruit__imgbox {
+        width: 100%;
+        .fruit__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.fruit__veg-middletop {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%!important;
+    .fruit__img {
+        width: 100%!important;
+    }
+}
+.fruit__veg-middle {
+    padding: 0 !important;
+    margin: 0 !important;
+    @include d-flex();
+    width: 100%;
+    div {
+        width: 50%;
+        height: 100% !important;
+    }
+}
+.fruit__veg-right {
+    padding: 0 !important;
+    margin: 0 !important;
+    .fruit__imgbox {
+        width: 100%;
+        .fruit__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

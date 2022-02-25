@@ -543,6 +543,7 @@
   </div>
 </div>
 </section>
+
 <!-- feature section -->
 <section class="feature">
   <div class="container">
@@ -684,28 +685,38 @@
     </div>
   </div>
 </section>
+
 <!-- fruit section -->
 <!-- <section class="fruit">
   <div class="container">
     <div class="fruit__inner">
-      <div class="fruit__veg col-xs-12 col-md-3">
+      <div class="fruit__veg-left col-xs-12 col-md-3">
           <div class="fruit__imgbox col-xs-12">
-            <img src="images/" alt="img">
+            <img class="fruit__img" src="images/fruit1.jpeg" alt="img">
           </div>
       </div>
       <div class="fruit__veg col-xs-12 col-md-6">
-        <div class="fruit__imgbox col-xs-12">
-          <img src="images/" alt="img">
+        <div class="fruit__veg-middletop col-xs-12">
+          <img class="fruit__img" src="images/fruit2.jpeg" alt="">
+        </div>
+        <div class="fruit__veg-middle col-xs-12">
+          <div class="fruit__imgbox col-xs-12 col-md-6">
+            <img class="fruit__img" src="images/fruit4.jpeg" alt="img">
+          </div>
+          <div class="fruit__imgbox col-xs-12 col-md-6">
+            <img class="fruit__img" src="images/fruit3.jpeg" alt="img">
+          </div>
         </div>
       </div>
-      <div class="fruit__veg col-xs-12 col-md-3">
+      <div class="fruit__veg-right col-xs-12 col-md-3">
         <div class="fruit__imgbox col-xs-12">
-          <img src="images/" alt="img">
+          <img class="fruit__img" src="images/fruit5.jpeg" alt="img">
         </div>
       </div>
     </div>
   </div>
 </section> -->
+
 <!-- feature section -->
 <section class="feature">
   <div class="container">
@@ -880,8 +891,8 @@
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button " data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active cr-btn" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button"  class="cr-btn"data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" class="cr-btn" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
@@ -927,9 +938,240 @@
   </div>
 </section>
 
+<!-- car aside -->
+<aside class=" aside car">
+  <div class="container">
+    <div class="car__inner">
+      <ul class="car__list">
+        <li class="car__item">
+          <a href="#">
+            <img class="car__img" src="images/car1.jpg" alt="img">
+          </a>
+        </li>
+        <li class="car__item">
+          <a href="#">
+            <img class="car__img" src="images/car2.jpg" alt="img">
+          </a>
+        </li>
+        <li class="car__item">
+          <a href="#">
+            <img class="car__img" src="images/car3.jpg" alt="img">
+          </a>
+        </li>
+        <li class="car__item">
+          <a href="#">
+            <img class="car__img" src="images/car4.jpg" alt="img">
+          </a>
+        </li>
+        <li class="car__item">
+          <a href="#">
+            <img class="car__img" src="images/car5.jpg" alt="img">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>
 
+<!-- subs section -->
+<section class="subs">
+  <div class="container">
+    <div class="subs__inner">
+      <div class="subs__support col-xs-12 col-md-6">
+          <div class="subs__support-box">
+            <div class="support__inner-box">
+              <i class='bx bx-headphone'></i>
+            </div>
+          </div>
+          <div class="subs__support-phone">
+            <p class="subs__phone">Phone Support</p>
+            <p class="subs__call">CALL US 24/7</p>
+            <a class="subs__call-phone" href="#"> (1800)-88-66-91</a>
+            <a class="subs__link" href="contact@example.com">
+              contact@example.com
+            </a>
+          </div>
+      </div>
+      <div class="subs__support col-xs-12 col-md-6">
+        <div class="subs__support-box">
+          <div class="support__inner-box">
+            <i class='bx bx-envelope-open'></i>
+          </div>
+        </div>
+        <div class="subs__support-phone">
+          <p class="subs__phone">Daily Updates</p>
+          <p class="subs__call">SUBSCRIBE US</p>
+            <a class="subs__link"href="#">                
+              Sign up and get a voucher of worth $250.00
+            </a>
+            <form class="subs__form" action="#">
+              <input type="email" placeholder="email adress"> <i class='bx bx-right-arrow-alt'></i>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item-title">
+              STORE LOCATION
+            </h3>
+          </li>
+          <li class="footer__item">
+            <p class="footer__item-text">
+              9066 Green Lake Drive Chevy
+                Chase, MD 20815
+            </p>
+          </li>
+          <li class="footer__item">
+            <p class="footer__item-text">
+              Monday - Saturday:
+            </p>
+              <p class="footer__item-time">
+                8:00 am - 4:00pm
+              </p>  
+          </li>
+          <li class="footer__item">
+            <p class="footer__item-text">
+              Sunday:</p>
+              <p class="footer__item-time">
+                9:00 am - 5:00pm
+              </p>  
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item-title">
+              INFORMATION
+            </h3>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+                About us
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Check out
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Contact
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              service
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item-title">
+              MY ACCOUNT
+            </h3>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+                About us
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Check out
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Contact
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              service
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item-title">
+              CATEGORIES
+            </h3>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+                About us
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Check out
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              Contact
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">
+              service
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__item-title">
+              ACCEPT PAYMENT
+            </h3>
+          </li>
+          <li class="footer__item">
+            <img class="footer__img" src="images/footer-img.png" alt="img">
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__item-title">
+              follow us:
+            </h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copy copy">
+    <h3 class="copy__title">Copyright © 2021 <span> Freshio</span>. All Rights Reserved.</h3>
+  </div>
+</footer>
 
 <!-- ofcanavs right-->
 

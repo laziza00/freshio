@@ -3,6 +3,16 @@
 }
 .people__info {
     position: relative;
+    .carousel .carousel-indicators .cr-btn {
+        width: 8px !important;
+        height: 8px !important;
+        background-color: $light-color !important;
+        border: none;
+        border-radius: 50% !important;
+    }
+    .carousel .carousel-indicators .active {
+        background-color: $primary-green !important;
+    }
     .carousel-inner .carousel-item {
         border: none;
     }
@@ -20,6 +30,9 @@
     background-repeat: no-repeat;
     margin: 0;
 }
+}
+.people__list {
+    padding: 0 !important;
 }
 .people__item {
     display: flex;
@@ -111,7 +124,7 @@
 @media screen and (max-width: 768px) {
 
     .people {
-        padding: 0 0 40px 0;
+        padding: 0 !important;
     }
     .people__list {
         padding: 0;

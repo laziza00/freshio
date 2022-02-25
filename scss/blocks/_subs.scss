@@ -1,0 +1,139 @@
+.subs {
+    padding: 30px 0 0 0;
+    .subs__inner {
+        @include between();
+    }
+    .subs__support {
+        width: 49%;
+        padding: 40px 0;
+        border: 1px solid #e2e2e2;
+        border-radius: 5px;
+        @include d-flex();
+    }   
+    .subs__support-box {
+        padding: 0 40px;
+        @include center();
+        margin: 0 auto;
+        .support__inner-box { 
+            .bx {
+                font-size: 80px;
+                color: $primary-yellow;
+            }
+        }
+       
+    }
+    .subs__support-phone {
+        padding: 0 60px;
+        border-left: 1px solid #e2e2e2;
+        .subs__phone {
+            font-size: 13px;
+            color: $light-color;
+            margin: 0 0 10px 0;
+            text-transform: capitalize;
+        }
+        .subs__call {
+            font-size: 12px;
+            font-weight: 600;
+            color: $dark-color;
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+        }
+        .subs__call-phone {
+            font-size: 30px;
+            font-weight: 400;
+            color: $primary-yellow;
+            margin: 0 0 15px 0;
+            line-height: 30px;
+            text-decoration: none;
+            display: block;
+        }
+        .subs__link {
+            font-size: 14px;
+            color: $primary-green;
+            margin: 0;
+            font-weight: $bold;
+            text-decoration: none;
+        }
+        .subs__form {
+            margin: 10px 0 0 0;
+            height: 38px;
+            border: 1px solid #e2e2e2;
+            width: 90%;
+            padding: 0px 0 8px 20px;
+            border-radius: 30px;
+            input {
+                width: 80%;
+                padding: 6px 0 8px 20px;
+                color: $light-color;
+                text-transform: capitalize;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                .bx {
+                    color: $gray-color;
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+        .subs__inner {
+            flex-direction: column;
+        }
+        .subs__support {
+            width: 100% !important;
+            margin: 0 0 15px 0;
+            flex-direction: column;
+        }   
+        .subs__support-box {
+            margin: 0 auto 15px 0;
+            .support__inner-box { 
+                margin: 0 auto 15px 0;
+            }
+        }
+        .subs__support-phone {
+            padding: 0 !important;
+            border: none !important;
+            width: 100%;
+            margin: 0 auto;
+            .subs__phone {
+                text-align: center;
+                margin: 0 auto 15px auto !important;
+            }
+            .subs__call {
+                margin: 0 auto 15px auto !important;
+                text-align: center;
+            }
+            .subs__call-phone {
+                margin: 0 auto 15px auto !important;
+                display: block;
+                text-align: center;            
+            }
+            .subs__link {
+                display: block;
+                margin: 0 auto 15px auto !important;
+                text-align: center;
+                width: 70%;
+            }
+            .subs__form {
+                width: 90% !important;
+                display: block;
+                margin: 0 auto !important;
+                input {
+                    width: 80%;
+                }
+            }
+    
+        }
+    }
+    

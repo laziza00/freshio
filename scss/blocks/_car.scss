@@ -1,0 +1,51 @@
+.car {
+    padding: 0 0 30px 0 !important;
+}
+.car__list {
+    border-top: 1px solid rgb(212, 211, 211);
+    padding: 30px 0 0 0 !important;
+    @include style-none();
+    @include between();
+}
+.car__img {
+    width: 150px;
+    height: 100px;
+    padding: 0 15px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.car__item:hover .car__img {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .car {
+        padding: 30px 0 30px !important;
+    }
+    .car__item:nth-child(5) {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .car {
+        padding: 30px 0 30px;
+    }
+    .car__item:nth-child(4) {
+        display: none;
+    }
+}
+
+    @media screen and (max-width: 540px) {
+        .car__list {
+            @include center();
+        }
+        .car__item:nth-child(3) {
+            display: none!important;
+        }
+    
+    }
+
