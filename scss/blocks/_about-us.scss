@@ -45,6 +45,44 @@
 
 
 
+// **************responsive****************
+
+
+@media screen and (max-width: 992px) {
+    //********** header***************
+
+    .header__inner .header__btn-hidden{
+        display: block;
+    }
+    .header__input-box {
+        display: none;
+    }
+    .header__user-btn:nth-child(2) {
+        display: none;
+    }
+    .header__user-btn:nth-child(1) {
+        display: none;
+    }
+    .header__user-btn:nth-child(3) {
+        margin: 0;
+    }
+    .header__inner .header__headphones {
+        display: none;
+    }
+    .contact__navbar-inner {
+        padding: 4px 0;
+    }
+    .barnav__menu-box {
+        display: none;
+    }
+    .contact__shop-box  {
+        width: 100%;
+    }
+
+}
+
+
+
 
 
 @media screen  and (max-width: 540px){
