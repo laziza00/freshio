@@ -18,494 +18,503 @@
 
 <body>
     <section class="hero-content">
-        <div class="header">
-            <div class="header__bottom">
-                <div class="container">
-                    <div class="header__inner">
-                        <button class="header__btn-hidden" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            <i class='bx bx-menu-alt-right'></i>
+        <div class="header contact__header">
+<div class="header__bottom">
+    <div class="container">
+        <div class="header__inner">
+            <button class="header__btn-hidden" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class='bx bx-menu-alt-right'></i>
+            </button>
+            <div class="header__logo-box">
+                <a href="#">
+                    <img class="header__logo-img" src="images/freshio-logo.jpg" alt="img">
+                </a>
+            </div>
+            <div class="header__input-box">
+                <form class="header__form" action="#">
+                    <button class="header__search-btn"><i class='bx bx-search'></i></button>
+                    <input class="header__input" type="text" placeholder="enter keyword">
+                    <button class="header__search" type="submit">
+                        search
+                    </button>
+                </form>
+            </div>
+            <div class="header__headphones">
+                <div class="header__phone-inner">
+                    <i class='bx bx-headphone'></i>
+                </div>
+                <div>
+                    <p class="header__call">CALL US 24/7</p>
+                    <a class="header__call-phone" href="#"> (1800)-88-66-91</a>
+                </div>
+            </div>
+            <div class="header__modal-btns">
+                <button class="header__user-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class='bx bx-user'></i>
+                </button>
+                <button class="header__user-btn">
+                    <i class='bx bx-heart'></i>
+                </button>
+                <button class="header__user-btn">
+                    <i class='bx bx-basket'></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header__navbar contact__navbar">
+    <div class="container">
+        <div class="header__navbar-inner barnav contact__navbar-inner">
+            <div class="barnav__shop-box contact__shop-box">
+                <div class="barnav__shop-inner">
+                    <div class="dropdown barnav__drop">
+                        <button class=" barnav__btn" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-menu'></i> Shop by Department
                         </button>
-                        <div class="header__logo-box">
-                            <a href="#">
-                                <img class="header__logo-img" src="images/freshio-logo.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="header__input-box">
-                            <form class="header__form" action="#">
-                                <button class="header__search-btn"><i class='bx bx-search'></i></button>
-                                <input class="header__input" type="text" placeholder="enter keyword">
-                                <button class="header__search" type="submit">
-                                    search
-                                </button>
-                            </form>
-                        </div>
-                        <div class="header__headphones">
-                            <div class="header__phone-inner">
-                                <i class='bx bx-headphone'></i>
-                            </div>
-                            <div>
-                                <p class="header__call">CALL US 24/7</p>
-                                <a class="header__call-phone" href="#"> (1800)-88-66-91</a>
-                            </div>
-                        </div>
-                        <div class="header__modal-btns">
-                            <button class="header__user-btn" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <i class='bx bx-user'></i>
-                            </button>
-                            <button class="header__user-btn">
-                                <i class='bx bx-heart'></i>
-                            </button>
-                            <button class="header__user-btn">
-                                <i class='bx bx-basket'></i>
-                            </button>
-                        </div>
+                        <ul class="dropdown-menu depart__list" aria-labelledby="dropdownMenuButton1">
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> fruit & vegetables
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> supplyments
+                                    <i class='bx bx-chevron-right'></i>
+                                    <div class="modal__drop drop">
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> dairy braed & eggs
+                                    <i class='bx bx-chevron-right'></i>
+                                    <div class="modal__drop drop2">
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> fruit & package & foods
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> beauty & care
+                                    <i class='bx bx-chevron-right'></i>
+                                    <div class="modal__drop drop3">
+                                        <ul class="drop__list">
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                            <li class="drop__item">
+                                                <a class="drop__link" href="#">
+                                                    vegetables
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> fhealth & velness
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> baby & infants
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> home care
+                                </a>
+                            </li>
+                            <li class="depart__item">
+                                <a class="depart__shop-link" href="#">
+                                    <i class='bx bxs-bowl-rice'></i> hot offers
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="header__navbar">
-                <div class="container">
-                    <div class="header__navbar-inner barnav">
-                        <div class="barnav__shop-box">
-                            <div class="barnav__shop-inner">
-                                <div class="dropdown barnav__drop">
-                                    <button class=" barnav__btn" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class='bx bx-menu'></i> Shop by Department
-                                    </button>
-                                    <ul class="dropdown-menu depart__list" aria-labelledby="dropdownMenuButton1">
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> fruit & vegetables
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> supplyments
-                                                <i class='bx bx-chevron-right'></i>
-                                                <div class="modal__drop drop">
-                                                    <ul class="drop__list">
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> dairy braed & eggs
-                                                <i class='bx bx-chevron-right'></i>
-                                                <div class="modal__drop drop2">
-                                                    <ul class="drop__list">
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> fruit & package & foods
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> beauty & care
-                                                <i class='bx bx-chevron-right'></i>
-                                                <div class="modal__drop drop3">
-                                                    <ul class="drop__list">
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                        <li class="drop__item">
-                                                            <a class="drop__link" href="#">
-                                                                vegetables
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> fhealth & velness
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> baby & infants
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> home care
-                                            </a>
-                                        </li>
-                                        <li class="depart__item">
-                                            <a class="depart__shop-link" href="#">
-                                                <i class='bx bxs-bowl-rice'></i> hot offers
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="barnav__menu-box">
-                            <nav class="barnav__nav-shop nav">
-                                <ul class="nav__list">
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="#">
-                                            Home <i class='bx bx-chevron-down'></i>
-                                        </a>
-                                        <div class="barnav__drop home__drop">
-                                            <ul class="home__drop-list">
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                                <li class="home__drop-item">
-                                                    <a class="home__drop-link" href="#">
-                                                        home 1
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="#">
-                                            Shop
-                                            <i class='bx bx-chevron-down'></i>
-                                        </a>
-                                        <div class="barnav__drop shop__drop">
-                                            <div class="shop__drop__inner">
-                                                <ul class="shop__drop-list">
-                                                    <li class="shop__drop-item">
-                                                        <p class="shop__drop-title">categories1</p>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="shop__drop-list">
-                                                    <li class="shop__drop-item">
-                                                        <p class="shop__drop-title">categories1</p>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="shop__drop-list">
-                                                    <li class="shop__drop-item">
-                                                        <p class="shop__drop-title">categories1</p>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="shop__drop-list">
-                                                    <li class="shop__drop-item">
-                                                        <p class="shop__drop-title">categories1</p>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                    <li class="shop__drop-item">
-                                                        <a class="shop__drop-link" href="#">
-                                                            vegetables
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="#">
-                                            Pages
-                                            <i class='bx bx-chevron-down'></i>
-                                        </a>
-                                        <div class="barnav__drop page__drop">
-                                            <div class="page__drop-inner">
-                                                <ul class="page__drop-list">
-                                                    <li class="page__drop-item">
-                                                        <img class="pages__drop-img" src="images/pages-img.jpg"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="page__drop-item">
-                                                        <img class="pages__drop-img" src="images/pages-img.jpg"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="page__drop-item">
-                                                        <img class="pages__drop-img" src="images/pages-img.jpg"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="page__drop-item">
-                                                        <img class="pages__drop-img" src="images/pages-img.jpg"
-                                                            alt="img">
-                                                    </li>
-                                                    <li class="page__drop-item">
-                                                        <img class="pages__drop-img" src="images/pages2.jpg" alt="img">
-                                                    </li>
-                                                    <li class="page__drop-item">
-                                                        <img class="pages__drop-img" src="images/pages3.jpg" alt="img">
-                                                    </li>
-                                                    <li class="page__drop-item">
-                                                        <img class="pages__drop-img" src="images/pages3.jpg" alt="img">
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="#">
-                                            blog
-                                        </a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a class="nav__link" href="#">
-                                            contact
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+<div class="barnav__menu-box">
+<nav class="barnav__nav-shop nav">
+<ul class="nav__list">
+    <li class="nav__item">
+        <a class="nav__link" href="#">
+            Home <i class='bx bx-chevron-down'></i>
+        </a>
+        <div class="barnav__drop home__drop">
+            <ul class="home__drop-list">
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+                <li class="home__drop-item">
+                    <a class="home__drop-link" href="#">
+                        home 1
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="#">
+            Shop
+            <i class='bx bx-chevron-down'></i>
+        </a>
+        <div class="barnav__drop shop__drop">
+            <div class="shop__drop__inner">
+                <ul class="shop__drop-list">
+                    <li class="shop__drop-item">
+                        <p class="shop__drop-title">categories1</p>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                </ul>
+                <ul class="shop__drop-list">
+                    <li class="shop__drop-item">
+                        <p class="shop__drop-title">categories1</p>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                </ul>
+                <ul class="shop__drop-list">
+                    <li class="shop__drop-item">
+                        <p class="shop__drop-title">categories1</p>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                </ul>
+                <ul class="shop__drop-list">
+                    <li class="shop__drop-item">
+                        <p class="shop__drop-title">categories1</p>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                    <li class="shop__drop-item">
+                        <a class="shop__drop-link" href="#">
+                            vegetables
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="contact-hero">
-            <div class="container">
-                <div class="contact-hero__inner">
-                    <a class="contact-hero__link" href="#">home <i class='bx bx-chevron-right'></i></a>
-                    <a class="contact-hero__link" href="#">contact us</a>
-                </div>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="#">
+            Pages
+            <i class='bx bx-chevron-down'></i>
+        </a>
+        <div class="barnav__drop page__drop">
+            <div class="page__drop-inner">
+                <ul class="page__drop-list">
+                    <li class="page__drop-item">
+                        <img class="pages__drop-img" src="images/pages-img.jpg"
+                            alt="img">
+                    </li>
+                    <li class="page__drop-item">
+                        <img class="pages__drop-img" src="images/pages-img.jpg"
+                            alt="img">
+                    </li>
+                    <li class="page__drop-item">
+                        <img class="pages__drop-img" src="images/pages-img.jpg"
+                            alt="img">
+                    </li>
+                    <li class="page__drop-item">
+                        <img class="pages__drop-img" src="images/pages-img.jpg"
+                            alt="img">
+                    </li>
+                    <li class="page__drop-item">
+                        <img class="pages__drop-img" src="images/pages2.jpg" alt="img">
+                    </li>
+                    <li class="page__drop-item">
+                        <img class="pages__drop-img" src="images/pages3.jpg" alt="img">
+                    </li>
+                    <li class="page__drop-item">
+                        <img class="pages__drop-img" src="images/pages3.jpg" alt="img">
+                    </li>
+                </ul>
             </div>
         </div>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="#">
+            blog
+        </a>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="#">
+            contact
+        </a>
+    </li>
+</ul>
+</nav>
+</div>
+        </div>
+    </div>
+</div>
+        </div>
+<div class="contact-hero">
+    <div class="container">
+        <div class="contact-hero__inner">
+            <a class="contact-hero__link" href="index.html">home <i class='bx bx-chevron-right'></i></a>
+            <a class="contact-hero__link" href="#">contact us</a>
+        </div>
+    </div>
+</div>
     </section>
 
-    <section class="contact">
-        <div class="container">
-            <div class="contact__inner">
-                <div class="contact__info col-xs-12 col-xs-12 col-md-3">
-                    <h3 class="contact__title">
-                        STORE INFORMATION
-                    </h3>
-                    <div class="contact__location-box">
-                        <div class="contact__icon-box">
-                            <i class='bx bxs-location-plus'></i>
-                        </div>
-                        <p class="contact__fresh-text">Freshio</p>
-                        <p class="contact__fresh-text"> France</p>
+<section class="contact">
+    <div class="container">
+        <div class="contact__inner">
+            <div class="contact__info col-xs-12 col-md-3">
+                <h3 class="contact__title">
+                    STORE INFORMATION
+                </h3>
+                <div class="contact__location-box">
+                    <div class="contact__icon-box">
+                        <i class='bx bxs-location-plus'></i>
                     </div>
-                    <div class="contact__location-box">
-                        <div class="contact__icon-box">
-                            <i class='bx bxs-envelope'></i>
-                        </div>
+                    <p class="contact__fresh-text">
+                        Freshio
+                            <br>
+                    france</p>
+                </div>
+                <div class="contact__location-box">
+                    <div class="contact__icon-box">
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+                    <div>
                         <p class="contact__fresh-text">
                             Email us:
                         </p>
                         <a class="contact__fresh-link" href="#"> demo@demo.com</a>
                     </div>
                 </div>
-                <div class="contact__us col-xs-12 col-md-3">
-                    <h3 class="contact__title">
-                        contact us
-                    </h3>
-                    <div class="contact__list-box">
-                        <form class="contact__form" action="#">
-                            <div>
-                                <label class="contact__subject">Subject</label>
-                                <select class="contact__select" name="contact" id="contact">
-                                    <option value="">customer servic</option>
-                                    <option value="">webmaster</option>
-                                </select>
+            </div>
+            <div class="contact__us col-xs-12 col-md-3">
+                <h3 class="contact__title">
+                    contact us
+                </h3>
+                <div class="contact__list-box">
+                    <form class="contact__form" action="#">
+                        <div class="contact__form-box">
+                            <label class="contact__subject">Subject</label>
+                            <select class="contact__select" name="contact" id="contact">
+                                <option value="">Customer servic</option>
+                                <option value="">Webmaster</option>
+                            </select>
+                        </div>
+                        <div class="contact__form-box">
+                            <label for="email" class="contact__subject">Email address</label>
+                            <input class="contact__email" type="email" name="email" placeholder="your@mail.com">
+                        </div>
+                        <div class="contact__form-box" >
+                            <label class="contact__subject sub" for="file">Attachment</label>
+                            <div class="contact__input-box">
+                            <input class="contact__file" type="text">
+                            <button class="contact__file-btn">Choose file</button>
                             </div>
-                            <div>
-                                <label for="email" class="contact__subject">Email address</label>
-                                <input class="contact__email" type="email" name="email" placeholder="your@mail.com">
-                            </div>
-                            <div>
-                                <label for="file">Attachment</label>
-                                <div>
-                                    <input class="contact__file" type="text">
-                                    <button class="contact__file-btn"></button>
-                                </div>
-                                <p class="contact__optional">optional</p>
-                            </div>
-                            <div>
-                                <label for="text" class="contact__subject">Message</label>
-                                <input type="text" placeholder="how can we help" required>
-                            </div>
-                            <button class="contact" type="submit"></button>
-                        </form>
+                        </div>
+                        <div class="contact__form-box">
+                            <label for="text" class="contact__subject sub2">Message</label>
+                            <textarea class="contact__help" name="textrea" id="textarea" cols="10" rows="3"> How can we help</textarea>
+                        </div>
+                        <div class="contact__submit-box">
+                        <button class="contact__submit" type="submit">send</button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- subs section -->
+<aside class="contact-aside">
+    <div></div>
+</aside>
 
     <!-- footer -->
     <footer class="footer">

@@ -13,7 +13,7 @@
         position: absolute;
         top: 27%;
         left: 10%;
-        z-index: 2000;
+        z-index: 200;
         .hero__home-title {
             font-size: 24px;
             line-height: 24px;
@@ -63,7 +63,7 @@
         background-color: $white-color !important;
         border: none;
         padding: 10px;
-        .hero__cr-btn:nth-child(1){
+        .hero__cr-btn{
             position: absolute !important;
             bottom: 30px !important;
             right: 30px !important;
