@@ -6178,4 +6178,242 @@ img {
     width: 100%;
   }
 }
+
+.contact-aside {
+  padding: 50px 0;
+}
+
+.contact-aside .contact-aside__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 70px 0  0;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__phone .contact-aside__phone-box {
+  margin: 0 15px 0 0;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__phone .contact-aside__phone-box .bx {
+  font-size: 52px;
+  color: #bac34e;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__phone .contact-aside__call {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin: 0 0 13px;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__phone .contact-aside__call-phone {
+  font-size: 20px;
+  color: #bac34e;
+  text-decoration: none;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__phone .contact-aside__link-text {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-aside .contact-aside__inner .contact-aside__phone .contact-aside__link-text:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #bac34e;
+}
+
+.contact-aside__phone:nth-child(1) {
+  margin-right: 40px;
+}
+
+.contact-aside__social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-aside__social {
+  margin: 0 70px 0;
+}
+
+.contact-aside__social .contact-aside__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contact-aside__social .contact-aside__list .contact-aside__item {
+  padding: 0 10px;
+}
+
+.contact-aside__social .contact-aside__list .contact-aside__item .contact-aside__link .bx {
+  font-size: 17px;
+  color: #bac34e;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-aside__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-aside__social-box {
+    width: 100%;
+  }
+  .contact-aside__social-box .contact-aside__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 50%;
+    margin: 0 !important;
+  }
+  .contact-aside__social-box .contact-aside__img-box {
+    width: 50%;
+  }
+  .contact-aside__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 20px 0 !important;
+    width: 100% !important;
+  }
+  .contact-aside__head .contact-aside__phone:nth-child(1) {
+    margin: 0 !important;
+  }
+  .contact-aside__head .contact-aside__phone {
+    width: 50% !important;
+  }
+  .contact-aside__head .contact-aside__phone .contact-aside__call-phone {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-aside {
+    padding: 0 0 50px !important;
+  }
+  .contact-aside .contact-aside__social-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-aside .contact-aside__social-box .contact-aside__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 auto 30px !important;
+  }
+  .contact-aside .contact-aside__social-box .contact-aside__img-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-aside .contact-aside__head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-aside .contact-aside__head .contact-aside__phone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    margin: 0 auto 30px !important;
+  }
+  .contact-aside .contact-aside__head .contact-aside__phone .contact-aside__phone-box {
+    margin: 0 !important;
+  }
+  .contact-aside .contact-aside__head .contact-aside__phone .contact-aside__phone-box .contact-aside__call {
+    display: block;
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+  .contact-aside .contact-aside__head .contact-aside__phone .contact-aside__phone-box .contact-aside__call-phone {
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+  .contact-aside .contact-aside__head .contact-aside__phone .contact-aside__phone-box .contact-aside__link-text {
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
