@@ -31,7 +31,7 @@
         margin: 0 0 30px 0;
         }
         .hero__step-link {
-            font-size: 12px;
+            font-size: 13px;
             color: $dark-color;
             font-weight: 700;
             position: relative;
@@ -42,7 +42,11 @@
             border-bottom: 1px solid $dark-color;
             vertical-align: middle;
             .bx {
+                padding: 4px 0 0 0;
+                font-size: 12px;
+                color: $dark-color;
                 transition: all 0.3s ease;
+                margin: 0 0 0 3px;
             }
             &:hover {
                 color: $primary-yellow;
@@ -56,24 +60,46 @@
             }
         }
     }
+ 
     .carousel .hero__cr-btn {
-        width: 40px !important;
-        height: 40px!important;
+        width: 50px !important;
+        height: 50px!important;
         border-radius: 50% !important;
         background-color: $white-color !important;
         border: none;
-        padding: 10px;
-        .hero__cr-btn{
-            position: absolute !important;
-            bottom: 30px !important;
-            right: 30px !important;
+        padding: 12px 14px;
+        position: absolute !important;
+        top: 550px !important;
+        right: 0 !important;
+        .bx {
+            font-size: 18px;
+            color: $dark-color
         }
+    } 
+
+    .carousel .hero__cr-btn2 {
+        width: 50px !important;
+        height: 50px!important;
+        border-radius: 50% !important;
+        background-color: $white-color !important;
+        border: none;
+        padding: 12px 14px;
+        position: absolute !important;
+        top: 550px !important;
+        right: 0 !important;
         .bx {
             font-size: 18px;
             color: $dark-color
         }
     } 
 }
+
+
+
+
+
+
+
 .hero__home2 {
     padding: 0 0 0 15px !important;
 }
@@ -115,6 +141,13 @@
         transition: all 0.3s ease;
         border-bottom: 1px solid $dark-color;
         vertical-align: middle;
+        .bx {
+            padding: 4px 0 0 0;
+            font-size: 12px;
+            color: $dark-color;
+            transition: all 0.3s ease;
+            margin: 0 0 0 3px;
+        }
         &:hover {
             color: $primary-yellow;
             transition: all 0.3s ease;
